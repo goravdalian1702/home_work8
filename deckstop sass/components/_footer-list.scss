@@ -1,10 +1,3 @@
-.adress{
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 60px;
-    }
-    
-}
-
 .footer-list {
     margin: 0;
     padding: 0;
@@ -13,10 +6,7 @@
 
 .footer-list__iteam {
     margin-bottom: 9px;
-    @media screen and (max-width: 1199px) {
-        text-align: center;
-    }
-    
+
     &:last-child{
         margin-bottom: 0;
     }

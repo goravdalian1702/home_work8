@@ -1,53 +1,27 @@
 .business-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    
-    }
-
-    @media screen and (min-width) {
-        margin: -15;
-        
-    }
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .business-list__iteam {
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    width: 450px;
+    width: 370px;
+    margin-left: 30px;
+    margin-top: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:not(:last-child) {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 30px;
 
-        }
-    }
-    
     &:hover{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px)/2);
-        margin: 15px;
-    
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 3 * 30px)/3);
-        margin: 15px;
-    }
-
 }
-
-
 
 .card{
     &__title{
@@ -68,12 +42,6 @@
 
     &__content{
         padding: 20px 24px;
-    }
-
-    &__image{
-        display: block;
-        width: 100%;
-        height: auto;
     }
 }
 
